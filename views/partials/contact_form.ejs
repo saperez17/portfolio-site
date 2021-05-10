@@ -12,34 +12,39 @@
       </div>
  </div>
  <section class="container form-container" id="contact">
-    <div class="columns">
-        <div class="column is-12-desktop">
+    <div class="columns is-multiline">
+        <div class="column is-6-desktop">
+                <!-- <div class="left-section"> -->
+                    <!-- <img src="/assets/message.svg" width="250px" alt="" class="contact-img"> -->
+                    <figure class="image contact-illustration ">
+                        <img class="is-rounded" src="/assets/message.svg">
+                    </figure>
+                <!-- </div> -->
+        </div>
+        <div class="column is-6-desktop">
             <form class="form-wrapper" >
-                <div class="left-section">
-                    <img src="/assets/message.svg" width="250px" alt="" class="contact-img">
+            
+                <div class="field fullname-field">
+                    <label for="" class="label"></label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Full name" name="fullname">
+                    </div>
                 </div>
-                <div class="right-section">
-                    <div class="field fullname-field">
-                        <label for="" class="label"></label>
-                        <div class="control">
-                            <input type="text" class="input" placeholder="Full name" name="fullname">
-                        </div>
+                <div class="field email-field">
+                    <label for="" class="label"></label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Email address" name="email">
                     </div>
-                    <div class="field email-field">
-                        <label for="" class="label"></label>
-                        <div class="control">
-                            <input type="text" class="input" placeholder="Email address" name="email">
-                        </div>
-                    </div>
-                    <div class="field text-field">
-                        <label for="" class="label"></label>
-                        <div class="control">
-                            <textarea type="textarea" class="input" name="content" placeholder="Your questions over here "></textarea>
-                        </div>
-                    </div>
-                    <button class="button is-warning is-medium mt-6" type="button" id="submit_form_btn">Send message</button>
                 </div>
+                <div class="field text-field">
+                    <label for="" class="label"></label>
+                    <div class="control">
+                        <textarea type="textarea" class="input" name="content" placeholder="Your questions over here "></textarea>
+                    </div>
+                </div>
+                <button class="button is-warning is-medium mt-6" type="button" id="submit_form_btn">Send message</button>
             </form>
+            
         </div>
     </div>
 </section>

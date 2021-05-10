@@ -315,21 +315,19 @@ html {
 
 
 /* Call to action banner */
-.hire-me-container{
-    height: 60vh;
-}
+
 /* End Call to action banner */
 
 /* Contact Form */
 @keyframes floating {
     0%{
-        margin-bottom: 0px;
+        bottom: 0px;
     }
     50%{
-        margin-bottom: 10px;
+        bottom: 10px;
     }
     100%{
-        margin-bottom: 0px;
+        bottom: 0px;
     }
 }
 .form-container{
@@ -351,7 +349,7 @@ html {
     background-color: white;
     background: linear-gradient(45deg, #00d1b2 0 30%, white 0 75%,#00d1b2 75% 100% );
 }
-.form-wrapper > .right-section{
+.form-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,75 +379,74 @@ input[type="text"]:focus, textarea[type="textarea"]:focus{
     width: 30rem;
 }
 .contact-img{
-    position: absolute;
+    /* position: absolute;
     bottom: 40%;
-    left: 10%;
+    left: 10%; */
     animation: floating 2s linear 0s infinite normal forwards; 
 }
 /* End Contact Form */
 
 /* Footer */
 .footer-container{
-    height: 40vh;
-    margin-top: 15rem !important;
+    height: 60vh;
+    margin-top: 7rem !important;
 }
 .footer-sections{
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    width: 60%;
-    margin: 2rem 0rem ;
+    /* border-top: 1px solid gray;
+    border-bottom: 1px solid gray; */
+    /* width: 60%;
+    margin: 2rem 0rem ; */
     position: relative;
 }
-.footer-sections > div{
+.footer-sections > p{
     margin: 1rem 4rem;
     position: relative;
 }
-.footer-sections > div > p{
+.footer-sections  > p{
     font-size: 1.5rem;
     font-weight: bold;
 }
-.footer-sections > div > p > a{
+.footer-sections > p > a{
     color: #4a4a4a ;
     font-weight: bold ;
 }
-.footer-sections > div > p > a:hover{
+.footer-sections  > p > a:hover{
     color: #3273dc ;
 }
-.footer-sections > div:first-child{
+.footer-links > div > div{
     position: relative;
-    left: 1rem;
 }
-.footer-sections > div:first-child:hover:before{
+.footer-links > div:first-child > div > p > a:hover:before{
     position: absolute;
     content: "🏠";
     width: 20px;
     height: 20px;
-    top: 20%;
-    left: -30%;
+    top: 15%;
+    left: -5%;
 }
-.footer-sections > div:nth-child(2):hover:before{
+.footer-links > div:nth-child(2) > div > p > a:hover:before{
     position: absolute;
     content: "🤓";
     width: 20px;
     height: 20px;
-    top: 20%;
-    left: -30%;
+    top: 15%;
+    left: -5%;
 }
-.footer-sections > div:nth-child(3):hover:before{
+.footer-links > div:nth-child(3) > div > p > a:hover:before{
     position: absolute;
     content: "💼";
     width: 20px;
     height: 20px;
-    top: 20%;
-    left: -30%;
+    top: 15%;
+    left: -5%;
 }
-.footer-sections > div:nth-child(4):hover:before{
+.footer-links > div:nth-child(4) > div > p > a:hover:before{
     position: absolute;
     content: "📱";
     width: 20px;
     height: 20px;
-    top: 20%;
-    left: -30%;
+    top: 15%;
+    left: -5%;
 }
 .footer-sections > div:last-child{
     position: relative;
@@ -546,4 +543,21 @@ input[type="text"]:focus, textarea[type="textarea"]:focus{
     background-size: 20px 20px;
     background-color: #0000002b;
     border-radius: 10%;
+}
+.footer-logo{
+    width: 8%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+@media (max-width:700px){
+    .footer-logo{
+        width: 20%;
+    }
+}
+.contact-illustration{
+    display: inline-block;
+    width: 70%;
+    position: relative;
+    animation: floating 2s linear 0s infinite normal forwards; 
 }
