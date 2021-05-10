@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/5daef69c7f.js" crossorigin="anonymous"></script>
+    <!-- Bulma CSS Library  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <!-- Scroll out -->
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <nav class="navbar has-shadow is-primary" role="navigation" aria-label="main navigation" id="home">
+        <!-- Navbar brand -->
+        <div class="navbar-brand">
+            <a class="navbar-item" style="max-height: 70px;">Santiago's Website</a>
+        </div>
+        <!-- Collapsable navbar items -->
+        <a class="navbar-burger" id="burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">My Tech Blog</a>
+                <a class="navbar-item">Contact me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Navbar -->
+
+    <!-- Breadcrumb -->
+    <!-- <div class="section pb-0">
+        <nav class="breadcrumb " aria-label="breadcrumbs">
+            <ul class="container">
+                <li class=""><a href="">
+                    <span class="icon is-small">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span >
+                        Home
+                    </span>
+                </a></li>
+                <li>
+                    <span class="icon is-small">
+                        <i>
+
+                        </i>
+                    </span>
+                    <span class="has-text-grey pr-1">
+                        Projects
+                    </span>
+                </li>
+                <li>
+                    <span class="icon is-small">
+                        <i>
+
+                        </i>
+                    </span>
+                    <span class="has-text-grey">Carfy</span>
+                </li>
+            </ul>
+        </nav>
+    </div> -->
+    <!-- End Breadcrumb -->
+
+    <!-- Welcome Section -->
+
+    <section class="section pt-0 pb-2">
+        <div class="container">
+            <div class="columns presentation-container">
+                <div class="column is-8">
+                    <section class="hero is-fullheight pl-6">
+                        <div class="hero-head">
+                        </div>
+                        <div class="hero-body">
+                            <div class="hero-title">
+                                <div class="subtitle welcome-name">
+                                    Welcome, I'm Santiago
+                                </div>
+                                <div class="title is-size-2-desktop has-text-weight-bold">
+                                    <p class="hero-title-1">Frontend & Backend <br>
+                                    <p class="hero-title-2">Developer</p>
+                                    </p>
+                                </div>
+                                <div class="subtitle is-size-4-desktop">
+                                    Freelance Full-stack Web Developer
+                                </div>
+                                <div class="is-flex is-flex-direction-row">
+                                    <button class="button is-primary mr-2">Hire me</button>
+                                    <button class="button is-info is-outlined ">Contact</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="column is-4 is-flex is-align-items-center  is-justify-content-left">
+                    <div class="profile-img">
+                        <img src="./public/assets/profile_picture.png" width="250px" alt="" class="hero-img">
+                    </div>
+                    <!-- <p>Hi</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-primary" id="about">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title about-title">
+                    ABOUT ME
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </span>
+                </p>
+                <p class="subtitle">
+                    Born in the latin country of Colombia I earned a bachelors degree in Electronic & Teleccomunications
+                    Engineering in 2019.
+                    Throughout my career I've participated of international volunteer programs, earned honorary academic
+                    acomplishments, and
+                    gained working experience as a software developer. I enjoy learning and helping others develop their
+                    skills, and have a
+                    special penchant for technology, software development, and coffee ☕.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="columns my-6 py-6 tech-stack-hook">
+        <div class="column is-12 has-text-centered py-6 my-6 welcome-txt">
+            <h1 class="is-size-3-mobile is-size-2-desktop title">
+                Cutting-edge Web Technologies
+            </h1>
+            <h2 class="is-size-4-mobile is-size-3-desktop subtitle">
+                Create next-generation products with industry-leading standards.
+            </h2>
+        </div>
+    </section>
+    <section class="container my-6 py-6">
+        <div class="columns is-variable ">
+            <div class="column is-5 has-text-centered ">
+                <h1 class="is-size-4-mobile is-size-3-desktop title skill-title">
+                    Frontend
+                </h1>
+                <ul class="is-size-4-desktop fade skills-list">
+                    <li>React.js / Vue.js </li>
+                    <li>Bootstrap / Bulma / Sass / JQuery</li>
+                    <li>HTML / CSS / JS</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="column is-2">
+                <img class="skills-img" src="./public/assets/method-draw-image.svg" alt="server logo">
+            </div>
+            <div class="column is-5 has-text-centered backend">
+                <h1 class="is-size-4-mobile is-size-3-desktop title skill-title">Backend</h1>
+                <ul class="is-size-4-desktop fade skills-list">
+                    <li>Node.js / Python / C#</li>
+                    <li>Express.js / Django</li>
+                    <li>MongoDB / PostgreSQL</li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-6">
+        <div class="columns">
+            <div class="column is-6-desktop">
+                <div class="tabs is-boxed background-tabs">
+                    <ul>
+                        <li class="is-active" data-target="soft-dev">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-laptop-code" aria-hidden="true"></i></i></span>
+                                <span>Soft Dev</span>
+                            </a>
+                        </li>
+                        <li data-target="volunteer">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-globe-americas" aria-hidden="true"></i></i></span>
+                                <span>Volunteer</span>
+                            </a>
+                        </li>
+                        <li data-target="awards">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-medal" aria-hidden="true"></i></i></span>
+                                <span>Awards</span>
+                            </a>
+                        </li>
+                        <li data-target="education">
+                            <a>
+                                <span class="icon is-small"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+                                <span>Education</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-2" id="tab-content">
+                    <div id="soft-dev" class="is-active">
+                        <div class="is-size-4 title">
+                            .NET Developer
+                        </div>
+                        <p>Worked over a year as a .NET developer for a tech. company in Colombia. Among my main responsabilities 
+                            were developing desktop applications on WPF, including technical documentation, unit testing, customer assistance and
+                            mantainance. I also had the opportunity to work with web development technologies including react, php, express.js and SQL databases.
+
+                        </p>
+                    </div>
+                    <div id="volunteer" class="is-hidden">
+                        <div class="is-size-4 title">
+                            AI For Mankind Volunteer
+                        </div>
+                        <p>Performed as an international volunteer for AI For Mankind, a California-based AI organization that promotes a socially-responsible development
+                            and usage of AI. My biggest achievement was occupaying the 2th position with my team in a hackaton where we developed a forest wildfire smoke detection
+                            algorithm to help ambiental authorities in California prevent big conflagrations by detecting fledgling fires.
+                        </p>
+                    </div>
+                    <div id="awards" class="is-hidden">
+                        <div class="is-size-4 title">
+                            Honorary Degree
+                        </div>
+                        <p>Only honory degree of the 2019 graduating class awarded by the University of Cauca's undergraduate committee for a meritorious 
+                            thesis project published on the International Journal of Environmental Research and Public Health under the title "Personalized Tracking of Physical Activity in Children Using a Wearable Heart Rate Monitor".                        </p>
+
+                        <div class="is-size-4 title mt-4">
+                            Best 10 Conference Paper
+                        </div>
+                        <p>Top 10 conference paper presented at the pHealth 2019 Conference in Italy under entitled "Adaption Component Based On Wearable Technology ToSupport Personalized Tracking of Physical Activity InChildren".</p>
+                    </div>
+                    <div id="education" class="is-hidden">
+                        <div class="is-size-4 title">
+                           Computer Programming Scholarship
+                        </div>
+                        <p>Recently awarded a scholarship for studying computer programming at the Univerity of Pereira in Colombia where I'm focusing on web & mobile development.</p>
+                        <div class="is-size-4 title mt-4">
+                            Harvard, MITx, Udemy..</div>
+                        <p>As part of my continuous search for improvement I take variegated online courses from top-world institutions. My latests certifications have been
+                            "Web Programming with Python and Javascript"-Harvard; "Machine Learning with Python-From Linear Model To Deep Learning"-MITx and "Responsive Web Design"-Freecodecamp.
+                        On my way to completing "The Complete 2021 Web Development Bootcamp" on Udemy. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-6">
+                <article class="message is-warning">
+                    <div class="message-body">
+                        I'm an active blogger on Twitter where I share dev tips, programming knowledge and relevant
+                        topics around the IT Industry.
+                        Besides taking part of a computer programming with a web development specialization I'm building
+                        a personal blog with which I
+                        aim to thelp other aspiring web developers achieve their full potential.
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <!-- Strengts Hook Message -->
+    <section class="columns my-6 py-6 tech-stack-hook">
+        <div class="column is-12 has-text-centered py-6 my-6 welcome-txt">
+            <h1 class="is-size-3-mobile is-size-2-desktop title fade">
+                Strive for excellence. <br> Fervent learner & Innate Leader.
+            </h1>
+        </div>
+    </section>
+    <!-- End Strengts Hook Message -->
+    <!-- Strengths -->
+    <div class="container py-6">
+        <div class="columns is-centered">
+            <div class="column is-4-desktop">
+                <div class="box-strength fade fade1">
+                    <img class="box-illustration" src="./public/assets/strong.svg" alt="strong player image"width="150px">
+                    <div class="is-flex is-flex-direction-column box-wrapper">
+                        <h2 class="is-size-1 box-num">1</h2>
+                        <h1 class="is-title is-size-3 has-text-weight-semibold box-title">Strong Programming knowledge
+                        </h1>
+                        <p>With 3+ years of practical coding experience and 1 year of professional software development experience, I have acquired solid programming foundations.</p>
+                        <div class="is-flex is-justify-content-flex-start mt-6 mb-3">
+                            <button class="button is-primary">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4-desktop">
+                <div class="box-strength fade fade2">
+                    <img class="box-illustration" src="./public/assets/multi-task.svg" alt="strong player image"
+                        width="150px">
+                    <div class="box-wrapper is-flex is-flex-direction-column ">
+                        <h2 class="is-size-1 box-num">2</h2>
+                        <h1 class="is-title is-size-3 has-text-weight-semibold box-title ">Multi-tasking & Self-starter
+                        </h1>
+                        <p>From my participation on diverse roles I enjoy being part of multiple activites while keeping an organized schedule and meeting tight deadlines.</p>
+                        <div class="is-flex is-justify-content-flex-start mt-6 mb-3">
+                            <button class="button is-primary">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4-desktop">
+                <div class="box-strength fade fade3">
+                    <img class="box-illustration" src="./public/assets/team_player.svg" alt="strong player image"
+                        width="150px">
+                    <div class="box-wrapper  ">
+                        <h2 class="is-size-1 box-num">3</h2>
+                        <h1 class="is-title is-size-3 has-text-weight-semibold box-title">Versatile Team Player</h1>
+                        <p class="">Always on the look for better ways of achieving goals, embrace new technologies and help grow your organization in the process. <br> &nbsp</p>
+                        <div class="is-flex is-justify-content-flex-start  mt-6 mb-3">
+                            <button class="button is-primary ">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strengts Hook Message -->
+    <section class="columns mt-6 gallery-hook" id="portfolio">
+        <div class="column is-12 has-text-centered py-6 my-6 welcome-txt">
+            <div class="is-size-3-mobile is-size-5-desktop title">
+                My Recent Projects
+            </div>
+            <div class="is-size-3-mobile is-size-1-desktop title">
+                See some of my developments
+            </div>
+        </div>
+    </section>
+    <!-- End Strengts Hook Message -->
+
+    <!-- End Welcome Section -->
+    <div class="container py-6">
+        <div class="columns is-multiline">
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-image">
+                        <!-- <figure class="image is-4by3 img-container card-radius"> -->
+                            <img src="./public/assets/carfy_logo.png" class="responsive" alt="Placeholder image">
+                        <!-- </figure> -->
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h4 class="is-size-5 title">Carfy App</h4>
+                                <div class="is-size-6 subtitle">Automobile Service Request</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>A full-stack ecommerce website for publishing and requesting car technical services. It allows
+                                customers creating stores, publishing services, etc; while shoppers can list, filter and request services.
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="https://carfydeployment.herokuapp.com/carfy" target="_blank" class="card-footer-item">Visit</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-img">
+                        <figure class="image is-4by3 img-container">
+                            <!-- <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"> -->
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h4 class="is-size-5 title">Snake Game</h4>
+                                <div class="is-size-6 subtitle">HTML5 Snake Game</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>A funny HTML5  implementation of the iconic snake game. Built with Vue and Phaser, it features a snake player, obstacles, scores and a leaderboard that 
+                                shows players' best scores. </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="" class="card-footer-item">Visit</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-img">
+                        <figure class="image is-4by3 img-container">
+                            <!-- <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"> -->
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h4 class="is-size-5 title">Twitter-Like App</h4>
+                                <div class="is-size-6 subtitle">Social Media App</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>As suggested by its name, this is a web app that simulates some features of the widely known social media 
+                                platform Twitter, including following, commenting, user profile, liking and tweeting.
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="" class="card-footer-item">Visit</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-img">
+                        <figure class="image is-4by3 img-container">
+                            <!-- <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"> -->
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h4 class="is-size-5 title">Auction Site</h4>
+                                <div class="is-size-6 subtitle">Online General Auction App</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Online platform that allows users take participate of public auctions to buy and sell items. It includes item categorization,
+                                bid offering, comments and whishlist. Once an offering's time is over the highest bid wins it. </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="" class="card-footer-item">Visit</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-img">
+                        <figure class="image is-4by3 img-container">
+                            <!-- <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"> -->
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <h4 class="is-size-5 title">Wiki Library</h4>
+                                <div class="is-size-6 subtitle">Online Wiki Articles</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Simple website for creating and sharing Wikipedia-like articles. It allows users creating, editing and accessing articles.<br> &nbsp <br> &nbsp </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="" class="card-footer-item">Visit</a>
+                    </footer>
+                </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <section class="hero is-primary mt-6 hire-me-container">
+        <div class="hero-body is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <p class="is-size-5 ">
+                Ready to move on?
+            </p>
+            <div class="has-text-centered mb-6">
+                <p class="is-size-2">
+                    Want to kick off your next project with me? <br>
+                </p>
+                <p class="is-size-2">
+                    Let's talk about it
+                </p>
+            </div>
+            <button class="button is-warning is-large ">Hire Me</button>
+        </div>
+    </section>
+    <!-- End Call to Action Banner -->
+
+
+    <!-- Form  -->
+    <section class="container form-container" id="contact">
+        <div class="columns">
+            <div class="column is-12-desktop">
+                <form class="form-wrapper" method="" action="/">
+                    <div class="left-section">
+                        <img src="./public/assets/message.svg" width="250px" alt="" class="contact-img">
+                    </div>
+                    <div class="right-section">
+                        <div class="field fullname-field">
+                            <label for="" class="label"></label>
+                            <div class="control">
+                                <input type="text" class="input" placeholder="Full name">
+                            </div>
+                        </div>
+                        <div class="field email-field">
+                            <label for="" class="label"></label>
+                            <div class="control">
+                                <input type="text" class="input" placeholder="Email address">
+                            </div>
+                        </div>
+                        <div class="field text-field">
+                            <label for="" class="label"></label>
+                            <div class="control">
+                                <textarea type="textarea" class="input" placeholder="Your questions over here "></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-warning is-medium mt-6">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Form  -->
+
+
+    <section class="container footer-container">
+        <div class="columns">
+            <div class="column is-12-desktop is-flex is-flex-direction-column is-justify-content-center is-align-items-center  ">
+                <h1 class="is-size-3">S.A Dev</h1>
+                <div class="is-flex is-flex-direction-row is-justify-content-center  footer-sections">
+                    <div><p><a href="#home">Home</a></p></div>
+                    <div><p><a href="#about">About</a></p></div>
+                    <div><p><a href="#portfolio">Portfolio</a></p></div>
+                    <div><p><a href="#contact">Contact</a></p></div>
+                </div>
+                <div class="social-media">
+                    <span class="icon is-large is-size-4 px-5">
+                        <a id="profile-link" target="_blank" href="https://github.com/saperez17/">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large is-size-4 px-5">
+                        <a id="" target="_blank" href="https://www.facebook.com/profile.php?id=1630614176">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large is-size-4 px-5">
+                        <a id="" target="_blank" href="https://twitter.com/santiag98152748">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large is-size-4 px-5">
+                        <a id="" target="_blank" href="mailto:santiagobn1@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </span>
+                    <span class="icon is-large is-size-4 px-5">
+                        <a id="" target="_blank" href="">
+                            <i class="fas fa-mobile"></i>
+                        </a>
+                    </span>
+                </div>
+                <div><p>Copyright © 2021. All rights reserved. Designed by Santiago Alvarado</p></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
