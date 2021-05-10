@@ -1,4 +1,6 @@
 
+
+
 ScrollOut({
     targets:['.hero-title, .fade, .skill-title, .frontend,  .profile-img, .presentation-container, .about-title, .fade1, .fade2, .fade3']
   });
@@ -29,4 +31,18 @@ tabsLi.each((idx, tab)=>{
         })
     })
 })
-// $(".hero-body")
+
+$('#submit_form_btn').click(async()=>{
+    const newMessage = {
+        fullname: $('input[name="fullname"]')[0].value,
+        email: $('input[name="email"]')[0].value,
+        content: $('textarea[name="content"]')[0].value
+    };
+    const res = await axios.post('http://127.0.0.1:9000/message', newMessage);
+    $('.modal').addClass('is-active')
+    $(window).click(()=>$('.modal').removeClass('is-active'))
+})
+
+$('#close_modal_btn').click(()=>{
+    $('.modal').removeClass('is-active')
+})

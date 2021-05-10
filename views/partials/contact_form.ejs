@@ -1,0 +1,46 @@
+ <!-- Form  -->
+ <div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content is-clipped">
+           <div class="box is-rounded is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <h1 class="is-size-2">Thank you!</h1>
+            <p class="is-size-4">I have received your message and will get in touch with you as soon as possible 😊.</p>
+           </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close" id="close_modal_btn"></button>
+      </div>
+ </div>
+ <section class="container form-container" id="contact">
+    <div class="columns">
+        <div class="column is-12-desktop">
+            <form class="form-wrapper" >
+                <div class="left-section">
+                    <img src="/assets/message.svg" width="250px" alt="" class="contact-img">
+                </div>
+                <div class="right-section">
+                    <div class="field fullname-field">
+                        <label for="" class="label"></label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Full name" name="fullname">
+                        </div>
+                    </div>
+                    <div class="field email-field">
+                        <label for="" class="label"></label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Email address" name="email">
+                        </div>
+                    </div>
+                    <div class="field text-field">
+                        <label for="" class="label"></label>
+                        <div class="control">
+                            <textarea type="textarea" class="input" name="content" placeholder="Your questions over here "></textarea>
+                        </div>
+                    </div>
+                    <button class="button is-warning is-medium mt-6" type="button" id="submit_form_btn">Send message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- End Form  -->
