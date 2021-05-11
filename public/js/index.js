@@ -38,7 +38,7 @@ $('#submit_form_btn').click(async()=>{
         email: $('input[name="email"]')[0].value,
         content: $('textarea[name="content"]')[0].value
     };
-    const res = await axios.post('http://127.0.0.1:9000/message', newMessage);
+    const res = await axios.post(`${window.location.origin}/message`, newMessage);
     $('.modal').addClass('is-active')
     $(window).click(()=>$('.modal').removeClass('is-active'))
 })
